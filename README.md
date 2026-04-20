@@ -18,16 +18,18 @@ This guide explains how to install [Moonraker](https://github.com/Arksine/moonra
 - Start prints remotely from OrcaSlicer
 - Moonraker API available at `http://<nebula-pad-ip>:7125`
 - No Fluidd, no Mainsail — just the API (you can add those later if you want)
-
+A
 ---
 
 ## Prerequisites
 
 **You need a rooted Nebula Pad with SSH enabled.**
 
-Use the firmware patching tool in this repository to create a root-enabled firmware image:
+Use **[nebula-pad-firmware-customizer](https://github.com/srvrguy/nebula-pad-firmware-customizer)** to create a root-enabled firmware image. This tool patches the stock Creality firmware to enable SSH root access without requiring any hardware modifications.
 
 ```bash
+git clone https://github.com/srvrguy/nebula-pad-firmware-customizer
+cd nebula-pad-firmware-customizer
 uv run main.py
 ```
 
